@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        //find index of first occurence//
+
+        const array = [10, 20, 30, 40, 30];
+        const index = array.indexOf(30);
+        console.log(index); 
+
+        const arr=['sam','praveen','veeramani','mugesh']
+        const ind=arr.indexOf('mugesh');
+        console.log(ind)
+
+        //Creating a new array with a given length 
+        let length = 3;
+        let value = 10;
+        let arr2= new Array(length).fill(value);
+        console.log(arr2);
+
+        //array dedulication
+        let arr3 = [7,2,2,0,8,8,8,9,10];
+        let res= [...new Set(arr3)];
+        console.log(res);
+
+       //finding diff btwn two arrays
+       let arrayA = [1, 2, 3, 4, 5];
+       let arrayB = [4, 5, 6, 7];
+       let diffAB = arrayB.filter(item => !arrayA.includes(item));
+       console.log(diffAB);
+
+       //looping array elements
+       let array2 = ['sam','mugesh','praveen','veeramani'];
+       for (let i = 0; i < array2.length; i++) {
+       console.log(array2[i]);
+}
+
+
+
+    </script>
+    
+</body>
+</html>
